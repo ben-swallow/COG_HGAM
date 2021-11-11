@@ -1,4 +1,8 @@
+##############
+## Script file for running HGAMS and calculating relative transmissibility
+##############
 
+####Authored by B. Swallow
 
 if(!require(tidyverse)){install.packages("tidyverse");require(tidyverse)}
 if(!require(mgcv)){install.packages("mgcv");require(mgcv)}
