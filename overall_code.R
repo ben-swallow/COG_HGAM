@@ -11,8 +11,8 @@ if(!require(emmeans)){install.packages("emmeans");require(emmeans)}
 
 
 #Read in COG data and local boundaries for LTLAs
-data <- read.delim("data.tsv")
-bounds <- read.csv("Local_Authority_Districts_(December_2020)_UK_BUC.csv", stringsAsFactors=TRUE)
+data <- read.delim("data/data.tsv")
+bounds <- read.csv("data/Local_Authority_Districts_(December_2020)_UK_BUC.csv", stringsAsFactors=TRUE)
 data$day<-as.numeric(as.Date(data$WeekEndDate)-as.Date(data$WeekEndDate[1])+1)
 
 #Select only Alpha, Delta and B.1.177 variants; sum together Delta variants 
